@@ -1,8 +1,3 @@
-Radu Emanuel Ioan 336 CC
-Arhitectura Sistemelor de Calcul
-Tema 1 - Marketplace
-
-Detalii de realizare
 
 Pentru implementare, am declarat ca membri ai clasei Marketplace, trei
 dictionare care vor retine schimbul de produse intre produceri si 
@@ -25,9 +20,4 @@ Pentru a readauga un produs inapoi in coada producatorului dupa ce acesta a fost
 sters din cart-ul cumparatorului, retin produsele care au fost cumparate de la 
 un producer intr-un dictionar separat, 'producersbpdict'.
 
-Tema mi s-a parut interesanta pentru ca m-am putut familiariza mai bine cu 
-conceptele de threaduri si sincronizare, dar si cu limbajul Python in care mai
-lucrasem doar la primele laboratoare de ASC.
-Am intampinat cateva probleme atunci cand in producer si consumer nu sincronizam
-bine dupa ce incercam sa public/adaug in cos.
 
