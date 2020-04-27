@@ -1,0 +1,33 @@
+Radu Emanuel Ioan 336 CC
+Arhitectura Sistemelor de Calcul
+Tema 1 - Marketplace
+
+Detalii de realizare
+
+Pentru implementare, am declarat ca membri ai clasei Marketplace, trei
+dictionare care vor retine schimbul de produse intre produceri si 
+consumeri. Doua dictionare pentru producatori care retin lista produselor
+publicate, respectiv lista produselor cumparate de la ei, ambele cu cheile
+id-urile producatorilor, dar si un dictionar pentru consumatori care retine
+id-urile carturilor si lista de produse cumparate de fiecare.
+
+Pentru generarea id-urilor producatorilor si carturilor folosesc o functie
+de random. Tot atunci initializez si listele de produse din fiecare dictionar
+la lista goala pentru ca mai tarziu sa pot face append in ea.
+
+Asupra listelor cu care lucrez fac doar operatii de append si remove care sunt
+thread safe. Python-ul este in sine un limbaj thread safe, dar pentru realizarea
+ceritelor temei am adaugat lock-uri atunci cand foloseam functia de random, dar
+si cand decrementam variabile i din producer si consumer pentru cantitatea de
+produse care se voia produsa/cumparata.
+
+Pentru a readauga un produs inapoi in coada producatorului dupa ce acesta a fost
+sters din cart-ul cumparatorului, retin produsele care au fost cumparate de la 
+un producer intr-un dictionar separat, 'producersbpdict'.
+
+Tema mi s-a parut interesanta pentru ca m-am putut familiariza mai bine cu 
+conceptele de threaduri si sincronizare, dar si cu limbajul Python in care mai
+lucrasem doar la primele laboratoare de ASC.
+Am intampinat cateva probleme atunci cand in producer si consumer nu sincronizam
+bine dupa ce incercam sa public/adaug in cos.
+
